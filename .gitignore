@@ -1,0 +1,33 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# CUDA/PyTorch build products
+**/build/
+**/dist/
+*.so
+*.pyd
+*.dll
+*.o
+*.obj
+*.a
+
+# Large pretrained weights and generated experiment archives
+pretrained/*.pt
+pretrained/*.pth
+FINAL_2026-09-30/
+outputs/
+results/
+logs/
+checkpoints/
+
+# Local data and editor files
+*.bag
+*.db
+*.sqlite
+.vscode/
+.idea/
+*.swp

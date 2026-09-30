@@ -1,0 +1,34 @@
+inherit_from: "configs/rgbd/bonn/config.yaml"
+
+Dataset:
+  dataset_path: "datasets/bonn/rgbd_bonn_moving_obstructing_box"
+  bound: [[-8.0, -8.5, -7.0],[8.5, 8.5, 8.0]]
+  Calibration:
+    fx: 542.822841
+    fy: 542.576870
+    cx: 315.593520
+    cy: 237.756098
+    k1: 0.039903
+    k2: -0.099343
+    p1: -0.00073
+    p2: -0.000144
+    k3: 0.0
+    distorted: True
+    width: 640
+    height: 480
+    depth_scale: 5000.0
+    end: 10
+
+Training:
+  single_thread: True
+  dystart: 120
+
+Results:
+  use_wandb: false
+  save_dir: "E:/工作/博士/论文/IROS/work/results"
+
+Training:
+  init_itr_num: 100
+  gaussian_update_every: 30
+
+
